@@ -38,11 +38,7 @@ export default {
     const countrycode = request.cf.country;
 
 
-    //const countryURL = `${countrycode}.png`;
     switch (request.method) {
-      case "PUT":
-        await env.R2_BUCKET.put(key, request.body);
-        return new Response(`Successfully wrote to ${key}`);
       case "GET":
         const object = await env.R2_BUCKET.get(`${countrycode}.png`);
   
