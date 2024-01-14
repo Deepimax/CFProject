@@ -1,1 +1,1 @@
-Worker script to extract images from R2 bucket to a new URL
+Cloudflare Worker Script for Project
